@@ -1,0 +1,27 @@
+{
+  "name": "ktr-ls1",
+  "version": "1.0.0",
+  "description": "back auth and visit card",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/segfault-master/ktr-msc-ls1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/segfault-master/ktr-msc-ls1/issues"
+  },
+  "homepage": "https://github.com/segfault-master/ktr-msc-ls1#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
