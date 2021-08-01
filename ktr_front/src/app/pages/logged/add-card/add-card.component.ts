@@ -1,6 +1,7 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
 import {LoggedService} from '../logged.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-add-card',
@@ -22,7 +23,7 @@ export class AddCardComponent implements OnInit {
   nameFormControl = new FormControl('', [
     Validators.required
   ]);
-  constructor(private loggedService: LoggedService) { }
+  constructor(private loggedService: LoggedService, private router: Router) { }
 
   ngOnInit(): void {
   }
