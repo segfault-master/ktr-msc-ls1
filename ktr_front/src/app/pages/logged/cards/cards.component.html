@@ -1,0 +1,18 @@
+<div>
+  <app-header></app-header>
+  <div class="contentWrapper">
+  <div class="cardWrapper">
+    <div *ngFor="let card of cards" class="card">
+      <div>{{card.name}}</div>
+      <div>{{card.companyName}}</div>
+      <div>{{card.email}}</div>
+      <div>{{card.tel}}</div>
+    </div>
+  </div>
+  <div class="addCard" (click)="cardOpen()">
+    add card
+  </div>
+  </div>
+  <app-add-card (close)="cardOpen()" (reload)="reload()" *ngIf="cardPopup">
+  </app-add-card>
+</div>

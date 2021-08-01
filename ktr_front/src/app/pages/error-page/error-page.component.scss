@@ -1,0 +1,29 @@
+
+.errorWrapper {
+  background-color: darkred;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.errorWrapper>div {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.title {
+  padding: 1em 0 0.5em 0;
+  font-size: 2em;
+}
+
+.description div {
+  max-width: 20vw;
+}
+

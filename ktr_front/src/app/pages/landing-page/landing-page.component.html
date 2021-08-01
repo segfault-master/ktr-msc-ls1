@@ -1,0 +1,18 @@
+<div>
+  <div class="wrapper">
+    <div class="header">
+      <div class="title">CardExchanger</div>
+      <div class="right_content">
+        <div (click)="click_login()">login</div>
+        <div (click)="click_register()">register</div>
+      </div>
+    </div>
+    <div>
+      <p>This is a demonstration website, it can be use to create, store and exchange company card</p>
+    </div>
+  </div>
+  <app-login (close)="click_login()" *ngIf="login">
+  </app-login>
+  <app-register (close)="click_register()" *ngIf="register">
+  </app-register>
+</div>

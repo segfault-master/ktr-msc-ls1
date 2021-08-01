@@ -1,0 +1,62 @@
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper .header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: #8A0000;
+  color: white;
+}
+
+.wrapper .header .title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+
+.wrapper .header .right_content {
+  width: 10vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.wrapper .header .right_content div {
+  cursor: pointer;
+  border-radius: 5px;
+  border: solid 1px #8A0000;
+  padding: 0.5em;
+}
+
+.wrapper .header .right_content div:hover {
+  border: solid 1px white;
+  background-color: #ac0000;
+}
+
+app-login {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #303030A0;
+}
+
+app-register {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #303030A0;
+}

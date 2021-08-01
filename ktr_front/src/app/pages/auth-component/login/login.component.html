@@ -1,0 +1,28 @@
+<div class="wrapper">
+  <div class="whiteWrapper">
+    <div class="closeButton" (click)="clickClose()">
+      <img src="./assets/close.png" width="20px">
+    </div>
+    <div class="formWrapper">
+      <div class="title">Login</div>
+      <form>
+        <div class="inputWrapper">
+          <label for="name">
+            Name :
+          </label>
+          <input id="name" type="text" [formControl]="nameFormControl" placeholder="Ex. patrick">
+        </div>
+        <div class="inputWrapper">
+          <label for="password">
+            Password :
+          </label>
+          <input id="password" [formControl]="passwordFormControl" type="password" placeholder="password">
+        </div>
+
+      </form>
+      <button (click)="login()" class="loginButton">Login</button>
+
+
+    </div>
+  </div>
+</div>

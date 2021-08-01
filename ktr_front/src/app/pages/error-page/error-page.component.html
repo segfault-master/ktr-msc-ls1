@@ -1,0 +1,11 @@
+<div class="errorWrapper">
+  <div class="title">
+    {{errorList[error].title}}
+  </div>
+  <div class="description">
+    <div>{{errorList[error].description}}</div>
+  </div>
+  <div class="link" *ngIf="errorList[error].linked">
+    <a href="{{errorList[error].link}}">{{errorList[error].linkTxt}}</a>
+  </div>
+</div>

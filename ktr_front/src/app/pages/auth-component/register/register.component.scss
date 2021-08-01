@@ -1,0 +1,75 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.whiteWrapper {
+  position: relative;
+  background-color: white;
+  width: 500px;
+  height: 50vh;
+}
+
+.closeButton {
+  position: absolute;
+  background-color: darkred;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  right: -20px;
+  top: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.8em;
+  padding: 0.5em;
+  margin-bottom: 2em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form .inputWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+label {
+  padding-right: 1em;
+}
+
+.registerButton {
+  margin-top: 1em;
+  background-color: #8A0000;
+  color: white;
+  font-weight: bold;
+  border: solid 1px #8A0000;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.5em;
+}
+
+.registerButton:hover {
+  border: solid 1px #8A0000;
+  color: #8A0000;
+  background-color: white;
+}

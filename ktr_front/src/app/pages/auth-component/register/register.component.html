@@ -1,0 +1,46 @@
+<div class="wrapper">
+  <div class="whiteWrapper">
+    <div class="closeButton" (click)="clickClose()">
+      <img src="./assets/close.png" width="20px">
+    </div>
+    <div class="formWrapper">
+      <div class="title">Register</div>
+      <form>
+        <div class="inputWrapper">
+          <label for="name">
+            Name :
+          </label>
+          <input id="name" type="text" [formControl]="nameFormControl" placeholder="Ex. patrick">
+        </div>
+        <div class="inputWrapper">
+          <label for="cname">
+            Company :
+          </label>
+          <input id="cname" type="text" [formControl]="companyNameFormControl" placeholder="Ex. patrick'sFirm">
+        </div>
+        <div class="inputWrapper">
+          <label for="email">
+            Email :
+          </label>
+          <input id="email" type="email" [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+        </div>
+        <div class="inputWrapper">
+          <label for="tel">
+            Tel :
+          </label>
+          <input id="tel" type="tel" [formControl]="telFormControl" placeholder="Ex. 0654636432">
+        </div>
+        <div class="inputWrapper">
+          <label for="password">
+            Password :
+          </label>
+          <input id="password" [formControl]="passwordFormControl" type="password" placeholder="password">
+        </div>
+
+      </form>
+      <button (click)="register()" class="registerButton">Register</button>
+
+
+    </div>
+  </div>
+</div>

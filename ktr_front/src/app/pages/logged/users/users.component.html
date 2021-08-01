@@ -1,0 +1,14 @@
+<div>
+  <app-header></app-header>
+  <div class="contentWrapper">
+    <div class="cardWrapper">
+      <div *ngFor="let user of users" class="card">
+        <div>{{user.name}}</div>
+        <div class="addCard" (click)="exchange(user.name)">
+          exchange card
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

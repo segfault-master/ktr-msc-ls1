@@ -1,0 +1,49 @@
+.contentWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cardWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0 0 5px #8A0000;
+  border: solid 1px darkred;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5em;
+}
+
+.addCard {
+  border-radius: 5px;
+  border: solid 2px darkred;
+  padding: 0.5em;
+  width: fit-content;
+  background-color: darkred;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.addCard:hover {
+  background-color: white;
+  color: darkred;
+}
+
+app-add-card {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #303030A0;
+}
