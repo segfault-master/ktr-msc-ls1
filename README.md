@@ -6,3 +6,6 @@ into ktr_back run:
 npm install
 npm start
 
+into ktr_front run:
+npm install
+ng serve
